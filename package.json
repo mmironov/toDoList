@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "fsevents": "^2.0.1",
     "mongoose": "^5.3.14"
   }
 }
