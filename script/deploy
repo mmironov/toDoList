@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh mmironov@167.99.139.123 <<EOF
+ssh jenkins@167.99.139.123 <<EOF
     cd ~/toDoList
     git pull
     npm install - production
