@@ -7,7 +7,7 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Tododb')
+mongoose.connect('mongodb://localhost/Tododb', { useNewUrlParser: true })
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -18,3 +18,5 @@ routes(app);
 app.listen(port);
 
 console.log('toDoList REST API started on prot: ' + port);
+
+module.exports = app
