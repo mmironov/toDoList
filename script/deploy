@@ -4,6 +4,7 @@ ssh mmironov@167.99.139.123 <<EOF
     cd ~/toDoList
     git pull
     npm install --production
-    node server start
+    pm2 stop server
+    pm2 start server
     exit
 EOF
